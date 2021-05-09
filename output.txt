@@ -1,1 +1,1534 @@
-g++ DPLL.cpp parser.h
+g++ -std=c++11 DPLL.cpp parser.h
+./a.out sudoku.cnf
+Iterations: 1
+Iterations: 2
+Iterations: 3
+Iterations: 4
+Iterations: 5
+Iterations: 6
+Iterations: 7
+Iterations: 8
+Iterations: 9
+Iterations: 10
+Iterations: 11
+Iterations: 12
+Iterations: 13
+Iterations: 14
+Iterations: 15
+Iterations: 16
+Iterations: 17
+Iterations: 18
+Iterations: 19
+Iterations: 20
+Iterations: 21
+Iterations: 22
+Iterations: 23
+Iterations: 24
+Iterations: 25
+Iterations: 26
+Iterations: 27
+Iterations: 28
+Iterations: 29
+Iterations: 30
+Iterations: 31
+Iterations: 32
+Iterations: 33
+Iterations: 34
+Iterations: 35
+Iterations: 36
+Iterations: 37
+Iterations: 38
+Iterations: 39
+Iterations: 40
+Iterations: 41
+Iterations: 42
+Iterations: 43
+Iterations: 44
+Iterations: 45
+Iterations: 46
+Iterations: 47
+Iterations: 48
+Iterations: 49
+Iterations: 50
+Iterations: 51
+Iterations: 52
+Iterations: 53
+Iterations: 54
+Iterations: 55
+Iterations: 56
+Iterations: 57
+Iterations: 58
+Iterations: 59
+Iterations: 60
+Iterations: 61
+Iterations: 62
+Iterations: 63
+Iterations: 64
+Iterations: 65
+Iterations: 66
+Iterations: 67
+Iterations: 68
+Iterations: 69
+Iterations: 70
+Iterations: 71
+Iterations: 72
+Iterations: 73
+Iterations: 74
+Iterations: 75
+Iterations: 76
+Iterations: 77
+Iterations: 78
+Iterations: 79
+Iterations: 80
+Iterations: 81
+Iterations: 82
+Iterations: 83
+Iterations: 84
+Iterations: 85
+Iterations: 86
+Iterations: 87
+Iterations: 88
+Iterations: 89
+Iterations: 90
+Iterations: 91
+Iterations: 92
+Iterations: 93
+Iterations: 94
+Iterations: 95
+Iterations: 96
+Iterations: 97
+Iterations: 98
+Iterations: 99
+Iterations: 100
+Iterations: 101
+Iterations: 102
+Iterations: 103
+Iterations: 104
+Iterations: 105
+Iterations: 106
+Iterations: 107
+Iterations: 108
+Iterations: 109
+Iterations: 110
+Iterations: 111
+Iterations: 112
+Iterations: 113
+Iterations: 114
+Iterations: 115
+Iterations: 116
+Iterations: 117
+Iterations: 118
+Iterations: 119
+Iterations: 120
+Iterations: 121
+Iterations: 122
+Iterations: 123
+Iterations: 124
+Iterations: 125
+Iterations: 126
+Iterations: 127
+Iterations: 128
+Iterations: 129
+Iterations: 130
+Iterations: 131
+Iterations: 132
+Iterations: 133
+Iterations: 134
+Iterations: 135
+Iterations: 136
+Iterations: 137
+Iterations: 138
+Iterations: 139
+Iterations: 140
+Iterations: 141
+Iterations: 142
+Iterations: 143
+Iterations: 144
+Iterations: 145
+Iterations: 146
+Iterations: 147
+Iterations: 148
+Iterations: 149
+Iterations: 150
+Iterations: 151
+Iterations: 152
+Iterations: 153
+Iterations: 154
+Iterations: 155
+Iterations: 156
+Iterations: 157
+Iterations: 158
+Iterations: 159
+Iterations: 160
+Iterations: 161
+Iterations: 162
+Iterations: 163
+Iterations: 164
+Iterations: 165
+Iterations: 166
+Iterations: 167
+Iterations: 168
+Iterations: 169
+Iterations: 170
+Iterations: 171
+Iterations: 172
+Iterations: 173
+Iterations: 174
+Iterations: 175
+Iterations: 176
+Iterations: 177
+Iterations: 178
+Iterations: 179
+Iterations: 180
+Iterations: 181
+Iterations: 182
+Iterations: 183
+Iterations: 184
+Iterations: 185
+Iterations: 186
+Iterations: 187
+Iterations: 188
+Iterations: 189
+Iterations: 190
+Iterations: 191
+Iterations: 192
+Iterations: 193
+Iterations: 194
+Iterations: 195
+Iterations: 196
+Iterations: 197
+Iterations: 198
+Iterations: 199
+Iterations: 200
+Iterations: 201
+Iterations: 202
+Iterations: 203
+Iterations: 204
+Iterations: 205
+Iterations: 206
+Iterations: 207
+Iterations: 208
+Iterations: 209
+Iterations: 210
+Iterations: 211
+Iterations: 212
+Iterations: 213
+Iterations: 214
+Iterations: 215
+Iterations: 216
+Iterations: 217
+Iterations: 218
+Iterations: 219
+Iterations: 220
+Iterations: 221
+Iterations: 222
+Iterations: 223
+Iterations: 224
+Iterations: 225
+Iterations: 226
+Iterations: 227
+Iterations: 228
+Iterations: 229
+Iterations: 230
+Iterations: 231
+Iterations: 232
+Iterations: 233
+Iterations: 234
+Iterations: 235
+Iterations: 236
+Iterations: 237
+Iterations: 238
+Iterations: 239
+Iterations: 240
+Iterations: 241
+Iterations: 242
+Iterations: 243
+Iterations: 244
+Iterations: 245
+Iterations: 246
+Iterations: 247
+Iterations: 248
+Iterations: 249
+Iterations: 250
+Iterations: 251
+Iterations: 252
+Iterations: 253
+Iterations: 254
+Iterations: 255
+Iterations: 256
+Iterations: 257
+Iterations: 258
+Iterations: 259
+Iterations: 260
+Iterations: 261
+Iterations: 262
+Iterations: 263
+Iterations: 264
+Iterations: 265
+Iterations: 266
+Iterations: 267
+Iterations: 268
+Iterations: 269
+Iterations: 270
+Iterations: 271
+Iterations: 272
+Iterations: 273
+Iterations: 274
+Iterations: 275
+Iterations: 276
+Iterations: 277
+Iterations: 278
+Iterations: 279
+Iterations: 280
+Iterations: 281
+Iterations: 282
+Iterations: 283
+Iterations: 284
+Iterations: 285
+Iterations: 286
+Iterations: 287
+Iterations: 288
+Iterations: 289
+Iterations: 290
+Iterations: 291
+Iterations: 292
+Iterations: 293
+Iterations: 294
+Iterations: 295
+Iterations: 296
+Iterations: 297
+Iterations: 298
+Iterations: 299
+Iterations: 300
+Iterations: 301
+Iterations: 302
+Iterations: 303
+Iterations: 304
+Iterations: 305
+Iterations: 306
+Iterations: 307
+Iterations: 308
+Iterations: 309
+Iterations: 310
+Iterations: 311
+Iterations: 312
+Iterations: 313
+Iterations: 314
+Iterations: 315
+Iterations: 316
+Iterations: 317
+Iterations: 318
+Iterations: 319
+Iterations: 320
+Iterations: 321
+Iterations: 322
+Iterations: 323
+Iterations: 324
+Iterations: 325
+Iterations: 326
+Iterations: 327
+Iterations: 328
+Iterations: 329
+Iterations: 330
+Iterations: 331
+Iterations: 332
+Iterations: 333
+Iterations: 334
+Iterations: 335
+Iterations: 336
+Iterations: 337
+Iterations: 338
+Iterations: 339
+Iterations: 340
+Iterations: 341
+Iterations: 342
+Iterations: 343
+Iterations: 344
+Iterations: 345
+Iterations: 346
+Iterations: 347
+Iterations: 348
+Iterations: 349
+Iterations: 350
+Iterations: 351
+Iterations: 352
+Iterations: 353
+Iterations: 354
+Iterations: 355
+Iterations: 356
+Iterations: 357
+Iterations: 358
+Iterations: 359
+Iterations: 360
+Iterations: 361
+Iterations: 362
+Iterations: 363
+Iterations: 364
+Iterations: 365
+Iterations: 366
+Iterations: 367
+Iterations: 368
+Iterations: 369
+Iterations: 370
+Iterations: 371
+Iterations: 372
+Iterations: 373
+Iterations: 374
+Iterations: 375
+Iterations: 376
+Iterations: 377
+Iterations: 378
+Iterations: 379
+Iterations: 380
+Iterations: 381
+Iterations: 382
+Iterations: 383
+Iterations: 384
+Iterations: 385
+Iterations: 386
+Iterations: 387
+Iterations: 388
+Iterations: 389
+Iterations: 390
+Iterations: 391
+Iterations: 392
+Iterations: 393
+Iterations: 394
+Iterations: 395
+Iterations: 396
+Iterations: 397
+Iterations: 398
+Iterations: 399
+Iterations: 400
+Iterations: 401
+Iterations: 402
+Iterations: 403
+Iterations: 404
+Iterations: 405
+Iterations: 406
+Iterations: 407
+Iterations: 408
+Iterations: 409
+Iterations: 410
+Iterations: 411
+Iterations: 412
+Iterations: 413
+Iterations: 414
+Iterations: 415
+Iterations: 416
+Iterations: 417
+Iterations: 418
+Iterations: 419
+Iterations: 420
+Iterations: 421
+Iterations: 422
+Iterations: 423
+Iterations: 424
+Iterations: 425
+Iterations: 426
+Iterations: 427
+Iterations: 428
+Iterations: 429
+Iterations: 430
+Iterations: 431
+Iterations: 432
+Iterations: 433
+Iterations: 434
+Iterations: 435
+Iterations: 436
+Iterations: 437
+Iterations: 438
+Iterations: 439
+Iterations: 440
+Iterations: 441
+Iterations: 442
+Iterations: 443
+Iterations: 444
+Iterations: 445
+Iterations: 446
+Iterations: 447
+Iterations: 448
+Iterations: 449
+Iterations: 450
+Iterations: 451
+Iterations: 452
+Iterations: 453
+Iterations: 454
+Iterations: 455
+Iterations: 456
+Iterations: 457
+Iterations: 458
+Iterations: 459
+Iterations: 460
+Iterations: 461
+Iterations: 462
+Iterations: 463
+Iterations: 464
+Iterations: 465
+Iterations: 466
+Iterations: 467
+Iterations: 468
+Iterations: 469
+Iterations: 470
+Iterations: 471
+Iterations: 472
+Iterations: 473
+Iterations: 474
+Iterations: 475
+Iterations: 476
+Iterations: 477
+Iterations: 478
+Iterations: 479
+Iterations: 480
+Iterations: 481
+Iterations: 482
+Iterations: 483
+Iterations: 484
+Iterations: 485
+Iterations: 486
+Iterations: 487
+Iterations: 488
+Iterations: 489
+Iterations: 490
+Iterations: 491
+Iterations: 492
+Iterations: 493
+^[[Iterations: 494
+Iterations: 495
+Iterations: 496
+Iterations: 497
+Iterations: 498
+Iterations: 499
+Iterations: 500
+Iterations: 501
+Iterations: 502
+Iterations: 503
+Iterations: 504
+Iterations: 505
+Iterations: 506
+Iterations: 507
+Iterations: 508
+Iterations: 509
+Iterations: 510
+Iterations: 511
+Iterations: 512
+Iterations: 513
+Iterations: 514
+Iterations: 515
+Iterations: 516
+Iterations: 517
+Iterations: 518
+Iterations: 519
+Iterations: 520
+Iterations: 521
+Iterations: 522
+Iterations: 523
+Iterations: 524
+Iterations: 525
+Iterations: 526
+Iterations: 527
+Iterations: 528
+Iterations: 529
+Iterations: 530
+Iterations: 531
+Iterations: 532
+Iterations: 533
+Iterations: 534
+Iterations: 535
+Iterations: 536
+Iterations: 537
+Iterations: 538
+Iterations: 539
+Iterations: 540
+Iterations: 541
+Iterations: 542
+Iterations: 543
+Iterations: 544
+Iterations: 545
+Iterations: 546
+Iterations: 547
+Iterations: 548
+Iterations: 549
+Iterations: 550
+Iterations: 551
+Iterations: 552
+Iterations: 553
+Iterations: 554
+Iterations: 555
+Iterations: 556
+Iterations: 557
+Iterations: 558
+Iterations: 559
+Iterations: 560
+Iterations: 561
+Iterations: 562
+Iterations: 563
+Iterations: 564
+Iterations: 565
+Iterations: 566
+Iterations: 567
+Iterations: 568
+Iterations: 569
+Iterations: 570
+Iterations: 571
+Iterations: 572
+Iterations: 573
+Iterations: 574
+Iterations: 575
+Iterations: 576
+Iterations: 577
+Iterations: 578
+Iterations: 579
+Iterations: 580
+Iterations: 581
+Iterations: 582
+Iterations: 583
+Iterations: 584
+Iterations: 585
+Iterations: 586
+Iterations: 587
+Iterations: 588
+Iterations: 589
+Iterations: 590
+Iterations: 591
+Iterations: 592
+Iterations: 593
+Iterations: 594
+Iterations: 595
+Iterations: 596
+Iterations: 597
+Iterations: 598
+Iterations: 599
+Iterations: 600
+Iterations: 601
+Iterations: 602
+Iterations: 603
+Iterations: 604
+Iterations: 605
+Iterations: 606
+Iterations: 607
+Iterations: 608
+Iterations: 609
+Iterations: 610
+Iterations: 611
+Iterations: 612
+Iterations: 613
+Iterations: 614
+Iterations: 615
+Iterations: 616
+Iterations: 617
+Iterations: 618
+Iterations: 619
+Iterations: 620
+Iterations: 621
+Iterations: 622
+Iterations: 623
+Iterations: 624
+Iterations: 625
+Iterations: 626
+Iterations: 627
+Iterations: 628
+Iterations: 629
+Iterations: 630
+Iterations: 631
+Iterations: 632
+Iterations: 633
+Iterations: 634
+Iterations: 635
+Iterations: 636
+Iterations: 637
+Iterations: 638
+Iterations: 639
+Iterations: 640
+Iterations: 641
+Iterations: 642
+Iterations: 643
+Iterations: 644
+Iterations: 645
+Iterations: 646
+Iterations: 647
+Iterations: 648
+Iterations: 649
+Iterations: 650
+Iterations: 651
+Iterations: 652
+Iterations: 653
+Iterations: 654
+Iterations: 655
+Iterations: 656
+Iterations: 657
+Iterations: 658
+Iterations: 659
+Iterations: 660
+Iterations: 661
+Iterations: 662
+Iterations: 663
+Iterations: 664
+Iterations: 665
+Iterations: 666
+Iterations: 667
+Iterations: 668
+Iterations: 669
+Iterations: 670
+Iterations: 671
+Iterations: 672
+Iterations: 673
+Iterations: 674
+Iterations: 675
+Iterations: 676
+Iterations: 677
+Iterations: 678
+Iterations: 679
+Iterations: 680
+Iterations: 681
+Iterations: 682
+Iterations: 683
+Iterations: 684
+Iterations: 685
+Iterations: 686
+Iterations: 687
+Iterations: 688
+Iterations: 689
+Iterations: 690
+Iterations: 691
+Iterations: 692
+Iterations: 693
+Iterations: 694
+Iterations: 695
+Iterations: 696
+Iterations: 697
+Iterations: 698
+Iterations: 699
+Iterations: 700
+Iterations: 701
+Iterations: 702
+Iterations: 703
+Iterations: 704
+Iterations: 705
+Iterations: 706
+Iterations: 707
+Iterations: 708
+Iterations: 709
+Iterations: 710
+Iterations: 711
+Iterations: 712
+Iterations: 713
+Iterations: 714
+Iterations: 715
+Iterations: 716
+Iterations: 717
+Iterations: 718
+Iterations: 719
+Iterations: 720
+Iterations: 721
+Iterations: 722
+Iterations: 723
+Iterations: 724
+Iterations: 725
+Iterations: 726
+Iterations: 727
+Iterations: 728
+Iterations: 729
+Iterations: 730
+Iterations: 731
+Iterations: 732
+Iterations: 733
+Iterations: 734
+Iterations: 735
+Iterations: 736
+Iterations: 737
+Iterations: 738
+Iterations: 739
+Iterations: 740
+Iterations: 741
+Iterations: 742
+Iterations: 743
+Iterations: 744
+Iterations: 745
+Iterations: 746
+Iterations: 747
+Iterations: 748
+Iterations: 749
+Iterations: 750
+Iterations: 751
+Iterations: 752
+Iterations: 753
+Iterations: 754
+Iterations: 755
+Iterations: 756
+Iterations: 757
+Iterations: 758
+Iterations: 759
+Iterations: 760
+Iterations: 761
+Iterations: 762
+Iterations: 763
+Iterations: 764
+Iterations: 765
+Iterations: 766
+Iterations: 767
+Iterations: 768
+Iterations: 769
+Iterations: 770
+Iterations: 771
+Iterations: 772
+Iterations: 773
+Iterations: 774
+Iterations: 775
+Iterations: 776
+Iterations: 777
+Iterations: 778
+Iterations: 779
+Iterations: 780
+Iterations: 781
+Iterations: 782
+Iterations: 783
+Iterations: 784
+Iterations: 785
+Iterations: 786
+Iterations: 787
+Iterations: 788
+Iterations: 789
+Iterations: 790
+Iterations: 791
+Iterations: 792
+Iterations: 793
+Iterations: 794
+Iterations: 795
+Iterations: 796
+Iterations: 797
+Iterations: 798
+Iterations: 799
+Iterations: 800
+Iterations: 801
+Iterations: 802
+Completed in 802 iterations!
+AA8
+AB1
+AF7
+AH5
+BB6
+BC9
+BH7
+BI2
+CD3
+CI9
+DB9
+DC5
+DD1
+DE7
+DF3
+DG8
+DI4
+EA1
+EB4
+EC2
+EE9
+EF6
+EG5
+EI7
+FD2
+FG6
+FI1
+GA9
+GB2
+GD5
+GE3
+HC8
+HH1
+IE8
+IF9
+II5
+-AA1
+-AA2
+-AA3
+-AA4
+-AA5
+-AA6
+-AA7
+-AA9
+-AB2
+-AB3
+-AB4
+-AB5
+-AB6
+-AB7
+-AB8
+-AB9
+-AC1
+-AC2
+AC3
+-AC4
+-AC5
+-AC6
+-AC7
+-AC8
+-AC9
+-AD1
+-AD2
+-AD3
+-AD4
+-AD5
+-AD6
+-AD7
+-AD8
+AD9
+-AE1
+AE2
+-AE3
+-AE4
+-AE5
+-AE6
+-AE7
+-AE8
+-AE9
+-AF1
+-AF2
+-AF3
+-AF4
+-AF5
+-AF6
+-AF8
+-AF9
+-AG1
+-AG2
+-AG3
+AG4
+-AG5
+-AG6
+-AG7
+-AG8
+-AG9
+-AH1
+-AH2
+-AH3
+-AH4
+-AH6
+-AH7
+-AH8
+-AH9
+-AI1
+-AI2
+-AI3
+-AI4
+-AI5
+AI6
+-AI7
+-AI8
+-AI9
+-BA1
+-BA2
+-BA3
+-BA4
+BA5
+-BA6
+-BA7
+-BA8
+-BA9
+-BB1
+-BB2
+-BB3
+-BB4
+-BB5
+-BB7
+-BB8
+-BB9
+-BC1
+-BC2
+-BC3
+-BC4
+-BC5
+-BC6
+-BC7
+-BC8
+-BD1
+-BD2
+-BD3
+BD4
+-BD5
+-BD6
+-BD7
+-BD8
+-BD9
+BE1
+-BE2
+-BE3
+-BE4
+-BE5
+-BE6
+-BE7
+-BE8
+-BE9
+-BF1
+-BF2
+-BF3
+-BF4
+-BF5
+-BF6
+-BF7
+BF8
+-BF9
+-BG1
+-BG2
+BG3
+-BG4
+-BG5
+-BG6
+-BG7
+-BG8
+-BG9
+-BH1
+-BH2
+-BH3
+-BH4
+-BH5
+-BH6
+-BH8
+-BH9
+-BI1
+-BI3
+-BI4
+-BI5
+-BI6
+-BI7
+-BI8
+-BI9
+-CA1
+CA2
+-CA3
+-CA4
+-CA5
+-CA6
+-CA7
+-CA8
+-CA9
+-CB1
+-CB2
+-CB3
+-CB4
+-CB5
+-CB6
+CB7
+-CB8
+-CB9
+-CC1
+-CC2
+-CC3
+CC4
+-CC5
+-CC6
+-CC7
+-CC8
+-CC9
+-CD1
+-CD2
+-CD4
+-CD5
+-CD6
+-CD7
+-CD8
+-CD9
+-CE1
+-CE2
+-CE3
+-CE4
+-CE5
+CE6
+-CE7
+-CE8
+-CE9
+-CF1
+-CF2
+-CF3
+-CF4
+CF5
+-CF6
+-CF7
+-CF8
+-CF9
+CG1
+-CG2
+-CG3
+-CG4
+-CG5
+-CG6
+-CG7
+-CG8
+-CG9
+-CH1
+-CH2
+-CH3
+-CH4
+-CH5
+-CH6
+-CH7
+CH8
+-CH9
+-CI1
+-CI2
+-CI3
+-CI4
+-CI5
+-CI6
+-CI7
+-CI8
+-DA1
+-DA2
+-DA3
+-DA4
+-DA5
+DA6
+-DA7
+-DA8
+-DA9
+-DB1
+-DB2
+-DB3
+-DB4
+-DB5
+-DB6
+-DB7
+-DB8
+-DC1
+-DC2
+-DC3
+-DC4
+-DC6
+-DC7
+-DC8
+-DC9
+-DD2
+-DD3
+-DD4
+-DD5
+-DD6
+-DD7
+-DD8
+-DD9
+-DE1
+-DE2
+-DE3
+-DE4
+-DE5
+-DE6
+-DE8
+-DE9
+-DF1
+-DF2
+-DF4
+-DF5
+-DF6
+-DF7
+-DF8
+-DF9
+-DG1
+-DG2
+-DG3
+-DG4
+-DG5
+-DG6
+-DG7
+-DG9
+-DH1
+DH2
+-DH3
+-DH4
+-DH5
+-DH6
+-DH7
+-DH8
+-DH9
+-DI1
+-DI2
+-DI3
+-DI5
+-DI6
+-DI7
+-DI8
+-DI9
+-EA2
+-EA3
+-EA4
+-EA5
+-EA6
+-EA7
+-EA8
+-EA9
+-EB1
+-EB2
+-EB3
+-EB5
+-EB6
+-EB7
+-EB8
+-EB9
+-EC1
+-EC3
+-EC4
+-EC5
+-EC6
+-EC7
+-EC8
+-EC9
+-ED1
+-ED2
+-ED3
+-ED4
+-ED5
+-ED6
+-ED7
+ED8
+-ED9
+-EE1
+-EE2
+-EE3
+-EE4
+-EE5
+-EE6
+-EE7
+-EE8
+-EF1
+-EF2
+-EF3
+-EF4
+-EF5
+-EF7
+-EF8
+-EF9
+-EG1
+-EG2
+-EG3
+-EG4
+-EG6
+-EG7
+-EG8
+-EG9
+-EH1
+-EH2
+EH3
+-EH4
+-EH5
+-EH6
+-EH7
+-EH8
+-EH9
+-EI1
+-EI2
+-EI3
+-EI4
+-EI5
+-EI6
+-EI8
+-EI9
+-FA1
+-FA2
+FA3
+-FA4
+-FA5
+-FA6
+-FA7
+-FA8
+-FA9
+-FB1
+-FB2
+-FB3
+-FB4
+-FB5
+-FB6
+-FB7
+FB8
+-FB9
+-FC1
+-FC2
+-FC3
+-FC4
+-FC5
+-FC6
+FC7
+-FC8
+-FC9
+-FD1
+-FD3
+-FD4
+-FD5
+-FD6
+-FD7
+-FD8
+-FD9
+-FE1
+-FE2
+-FE3
+-FE4
+FE5
+-FE6
+-FE7
+-FE8
+-FE9
+-FF1
+-FF2
+-FF3
+FF4
+-FF5
+-FF6
+-FF7
+-FF8
+-FF9
+-FG1
+-FG2
+-FG3
+-FG4
+-FG5
+-FG7
+-FG8
+-FG9
+-FH1
+-FH2
+-FH3
+-FH4
+-FH5
+-FH6
+-FH7
+-FH8
+FH9
+-FI2
+-FI3
+-FI4
+-FI5
+-FI6
+-FI7
+-FI8
+-FI9
+-GA1
+-GA2
+-GA3
+-GA4
+-GA5
+-GA6
+-GA7
+-GA8
+-GB1
+-GB3
+-GB4
+-GB5
+-GB6
+-GB7
+-GB8
+-GB9
+-GC1
+-GC2
+-GC3
+-GC4
+-GC5
+GC6
+-GC7
+-GC8
+-GC9
+-GD1
+-GD2
+-GD3
+-GD4
+-GD6
+-GD7
+-GD8
+-GD9
+-GE1
+-GE2
+-GE4
+-GE5
+-GE6
+-GE7
+-GE8
+-GE9
+GF1
+-GF2
+-GF3
+-GF4
+-GF5
+-GF6
+-GF7
+-GF8
+-GF9
+-GG1
+-GG2
+-GG3
+-GG4
+-GG5
+-GG6
+GG7
+-GG8
+-GG9
+-GH1
+-GH2
+-GH3
+GH4
+-GH5
+-GH6
+-GH7
+-GH8
+-GH9
+-GI1
+-GI2
+-GI3
+-GI4
+-GI5
+-GI6
+-GI7
+GI8
+-GI9
+-HA1
+-HA2
+-HA3
+-HA4
+-HA5
+-HA6
+HA7
+-HA8
+-HA9
+-HB1
+-HB2
+-HB3
+-HB4
+HB5
+-HB6
+-HB7
+-HB8
+-HB9
+-HC1
+-HC2
+-HC3
+-HC4
+-HC5
+-HC6
+-HC7
+-HC9
+-HD1
+-HD2
+-HD3
+-HD4
+-HD5
+HD6
+-HD7
+-HD8
+-HD9
+-HE1
+-HE2
+-HE3
+HE4
+-HE5
+-HE6
+-HE7
+-HE8
+-HE9
+-HF1
+HF2
+-HF3
+-HF4
+-HF5
+-HF6
+-HF7
+-HF8
+-HF9
+-HG1
+-HG2
+-HG3
+-HG4
+-HG5
+-HG6
+-HG7
+-HG8
+HG9
+-HH2
+-HH3
+-HH4
+-HH5
+-HH6
+-HH7
+-HH8
+-HH9
+-HI1
+-HI2
+HI3
+-HI4
+-HI5
+-HI6
+-HI7
+-HI8
+-HI9
+-IA1
+-IA2
+-IA3
+IA4
+-IA5
+-IA6
+-IA7
+-IA8
+-IA9
+-IB1
+-IB2
+IB3
+-IB4
+-IB5
+-IB6
+-IB7
+-IB8
+-IB9
+IC1
+-IC2
+-IC3
+-IC4
+-IC5
+-IC6
+-IC7
+-IC8
+-IC9
+-ID1
+-ID2
+-ID3
+-ID4
+-ID5
+-ID6
+ID7
+-ID8
+-ID9
+-IE1
+-IE2
+-IE3
+-IE4
+-IE5
+-IE6
+-IE7
+-IE9
+-IF1
+-IF2
+-IF3
+-IF4
+-IF5
+-IF6
+-IF7
+-IF8
+-IG1
+IG2
+-IG3
+-IG4
+-IG5
+-IG6
+-IG7
+-IG8
+-IG9
+-IH1
+-IH2
+-IH3
+-IH4
+-IH5
+IH6
+-IH7
+-IH8
+-IH9
+-II1
+-II2
+-II3
+-II4
+-II6
+-II7
+-II8
+-II9
