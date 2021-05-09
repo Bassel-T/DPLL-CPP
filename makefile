@@ -1,5 +1,5 @@
 run:
-	g++ DPLL.cpp parser.h
+	g++ -std=c++11 DPLL.cpp parser.h
 	./a.out $(filename)
 
 clean:

@@ -21,20 +21,14 @@ def min(a, b):
     return b
 
 with open("sudoku.cnf", "w") as f:
-    # Each slot must have at least one
-    for i in tileName:
-        for j in tileName:
-            for k in range(1, 9):
-                f.write(i + j + str(k) + " ")
-            
-            f.write(i + j + "9\n")
-
+    # One slot can't have two numbers
     for i in tileName:
         for j in tileName:
             for k in range(1, 10):
                 for m in range(k + 1, 10):
                     f.write("-" + i + j + str(k) + " -" + i + j + str(m) + "\n")
 
+    # Checking in rows and columns
     for i in range(len(tileName)):
         for j in range(len(tileName)):
             for k in range(min(i, j), len(tileName)):
@@ -45,8 +39,17 @@ with open("sudoku.cnf", "w") as f:
                     if k > i:
                         f.write("-" + tileName[i] + tileName[j] + str(m) + " -" + tileName[k] + tileName[j] + str(m) + "\n")
 
+    # Checks in box
     for box in regions:
         for i in range(len(box)):
             for j in range(i + 1, len(box)):
                 for k in range(1, 10):
                     f.write("-" + box[i] + str(k) + " -" + box[j] + str(k) + "\n")
+
+    # Each slot must have at least one
+    for i in tileName:
+        for j in tileName:
+            for k in range(1, 9):
+                f.write(i + j + str(k) + " ")
+            
+            f.write(i + j + "9\n")
