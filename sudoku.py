@@ -2,6 +2,7 @@
 # [Row][Column][Value]
 tileName = ["A", "B", "C" ,"D" ,"E", "F", "G", "H", "I"]
 
+# List of all 3x3 boxes
 regions = [
     ["AA", "AB", "AC", "BA", "BB", "BC", "CA", "CB", "CC"],
     ["DA", "DB", "DC", "EA", "EB", "EC", "FA", "FB", "FC"],
@@ -14,6 +15,7 @@ regions = [
     ["GG", "GH", "GI", "HG", "HH", "HI", "IG", "IH", "II"]
 ]
 
+# Get the smaller of the two values
 def min(a, b):
     if a < b:
         return a

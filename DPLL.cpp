@@ -17,19 +17,21 @@ Unknown = 0.5
 True = 1
 */
 
+// Makeshift stack entry for back-tracking
 struct HistEntry {
-public:
-string label;
-int boolean;
-bool isUnit;
+    public:
+        string label;
+        int boolean;
+        bool isUnit;
 
-HistEntry(string l, int b, bool i) {
-    label = l;
-    boolean = b;
-    isUnit = i;
-}
+        HistEntry(string l, int b, bool i) {
+            label = l;
+            boolean = b;
+            isUnit = i;
+        }
 };
 
+// Find the index of an in a vector
 int IndexOf(vector<string> haystack, string needle) {
     for (int i = 0, s = haystack.size(); i < s; i++) {
         if (strcmp(haystack.at(i).c_str(), needle.c_str()) == 0) {
@@ -69,45 +71,58 @@ vector<string> UniqueSymbols(vector<CNF*> kb) {
     return toReturn;
 }
 
+// Replace parts of a string with another string
 string Replace(string haystack, string before, string after) {
+
     if (strcmp(haystack.c_str(), before.c_str()) == 0) {
+        // The original string is equal to what we want to change
         return after;
     }
 
     int len = before.length();
 
     for (int i = haystack.find(before); i != std::string::npos; i = haystack.find(before)) {
+        // Replace substrings until it's gone
         haystack.replace(i, len, after);
     }
 
     return haystack;
 }
 
+// Evaluate the clause based on a model
 float EvaluateClause(CNF* clause, unordered_map<string, int> model) {
+    // Add Padding
     string s = " " + clause->toString() + " ";
 
     for (auto it = model.begin(); it != model.end(); it++) {
+        // Replace model entries with their values
         s = Replace(s, " " + it->first, " " + to_string(it->second));
         s = Replace(s, "-" + it->first, "-" + to_string(it->second));
     }
 
+    // Remove negations
     s = Replace(s, " -0", " 1");
     s = Replace(s, " -1", " 0");
- 
+    
+    // Find any "true" value
     int truth = s.find(" 1 ");
 
     if (truth == std::string::npos) {
         s = Replace(s, " 0", "");
         if (strcmp(s.c_str(), " ") == 0) {
+            // Everything resolves: False
             return 0;
         } else {
+            // Not everything resolves: Maybe
             return 0.5;
         }
     } else {
+        // At least one thing is true: True
         return 1;
     }
 }
 
+// Check if any clause in the KB, given a model, resolves false with one literal remaining
 unordered_map<string, int> FindUnitClause(vector<CNF*> kb, unordered_map<string, int> model) {
     for (CNF* clause : kb) {
         // Add padding
@@ -129,7 +144,7 @@ unordered_map<string, int> FindUnitClause(vector<CNF*> kb, unordered_map<string,
 
         if (truth == -1) {
             // Not already true
-
+            // Add all literals and their values to an unordered list
             s = Replace(s, " 0", "\0");
             stringstream ss(s);
             string data;
@@ -141,18 +156,22 @@ unordered_map<string, int> FindUnitClause(vector<CNF*> kb, unordered_map<string,
                 }
             }
         } else {
+            // Clause is already true, skip
             continue;
         }
 
         if (toReturn.size() == 1) {
+            // Found a unit clause
             return toReturn;
         }
     }
 
+    // No unit clauses found, return empty
     unordered_map<string, int> empty;
     return empty;
 }
 
+// Check if the KB contains a clause
 bool Contains(vector<CNF*> haystack, CNF* needle) {
     for (CNF* clause : haystack) {
         if (strcmp(clause->toString().c_str(), needle->toString().c_str()) == 0) {
@@ -163,6 +182,7 @@ bool Contains(vector<CNF*> haystack, CNF* needle) {
     return false;
 }
 
+// Check if the model contains an entry
 bool ModelContains(unordered_map<string, int> haystack, string needle) {
     for (auto it : haystack) {
         if (strcmp(it.first.c_str(), needle.c_str()) == 0) {
@@ -173,6 +193,7 @@ bool ModelContains(unordered_map<string, int> haystack, string needle) {
     return false;
 }
 
+// Prints the model
 void PrintModel(unordered_map<string, int> model, vector<string> symbols) {
     for (string i : symbols) {
         if (ModelContains(model, i)) {
@@ -189,12 +210,13 @@ void PrintModel(unordered_map<string, int> model, vector<string> symbols) {
     cout << endl << endl;
 }
 
-
+// Global variables
 int iter = 0;
 int MAX_ITERS = 100000;
 int nextChange = 0;
 int recurseSkip = 0;
 
+// Runs the DPLL_Iterative Algorithm
 bool DPLL_Iterative(vector<CNF*> kb, vector<string> symbols, unordered_map<string, int> model) {
     int kbSize = kb.size();
     stack<HistEntry> history;
@@ -209,8 +231,7 @@ bool DPLL_Iterative(vector<CNF*> kb, vector<string> symbols, unordered_map<strin
         for (CNF* clause : kb) {
             float eval = EvaluateClause(clause, model);
             if (eval == 0) {
-                // There was something wrong
-                // get top value from stack
+                // Back-track through the model
                 HistEntry latest = history.top();
                 history.pop();
 
@@ -219,8 +240,11 @@ bool DPLL_Iterative(vector<CNF*> kb, vector<string> symbols, unordered_map<strin
                     model.erase(latest.label);
                     latest = history.top();
                     history.pop();
-                        if (latest.isUnit) { recurseSkip--; }
-                        else {nextChange--;}
+                    if (latest.isUnit) {
+                        recurseSkip--;
+                    } else {
+                        nextChange--;
+                    }
                 }
 
                 // Flip it
@@ -230,15 +254,18 @@ bool DPLL_Iterative(vector<CNF*> kb, vector<string> symbols, unordered_map<strin
                 falseFound = true;
                 break;
             } else if (eval == 1) {
+                // Evaluated to true
                 valid++;
             }
         }
 
         if (falseFound) {
+            // Back-tracked
             continue;
         }
 
         if (valid == kbSize) {
+            // Model fits the entire KB
             cout << "Completed in " << iter << " iterations!" << endl;
             PrintModel(model, symbols);
             return true;
@@ -255,12 +282,12 @@ bool DPLL_Iterative(vector<CNF*> kb, vector<string> symbols, unordered_map<strin
                 }
         }
 
-        // TODO : Check if the next item is already in the model
-        // While in model, increment nextChange
+        // While the next clause is in model, increment recurseSkip
         while (ModelContains(model, symbols[nextChange + recurseSkip])) {
             recurseSkip++;
         }
 
+        // Add next item into model
         HistEntry newValue(symbols[nextChange + recurseSkip], 0, false);
         history.push(newValue);
         model[newValue.label] = 0;
@@ -275,6 +302,7 @@ bool DPLL_Iterative(vector<CNF*> kb, vector<string> symbols, unordered_map<strin
 // Main code
 int main(int argc, char* argv[]) {
     if (argc < 2) {
+        // Invalid number of parameters
         cout << "Second parameter must be a file name" << endl;
         return 1;
     }
@@ -290,6 +318,7 @@ int main(int argc, char* argv[]) {
     while (getline(file, line)) {
         CNF* input = new CNF(line);
         if (!Contains(kb, input)) {
+            // Only insert new clauses
             kb.push_back(input);
         }
     }
@@ -299,6 +328,7 @@ int main(int argc, char* argv[]) {
 
     unordered_map<string, int> model;
 
+    // Run algo
     if (!DPLL_Iterative(kb, symbols, model)) {
         cout << "Unsatisfiable!" << endl;
     }
