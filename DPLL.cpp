@@ -87,8 +87,8 @@ float EvaluateClause(CNF* clause, unordered_map<string, int> model) {
     string s = " " + clause->toString() + " ";
 
     for (auto it = model.begin(); it != model.end(); it++) {
-        s = Replace(s, " " + it->first + " ", " " + to_string(it->second) + " ");
-        s = Replace(s, "-" + it->first + " ", "-" + to_string(it->second) + " ");
+        s = Replace(s, " " + it->first, " " + to_string(it->second));
+        s = Replace(s, "-" + it->first, "-" + to_string(it->second));
     }
 
     s = Replace(s, " -0", " 1");
@@ -177,9 +177,9 @@ void PrintModel(unordered_map<string, int> model, vector<string> symbols) {
     for (string i : symbols) {
         if (ModelContains(model, i)) {
             if (model[i] == 1) {
-                cout << i << ", ";
+                cout << i << endl;
             } else {
-                cout << "-" << i << ", ";
+                cout << "-" << i << endl;
             }
         } else {
             cout << "?" << i << "?" << ", ";
